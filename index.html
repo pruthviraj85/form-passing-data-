@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./app.js" defer></script>
+</head>
+
+<body>
+    <div class="form-container">
+        <form action="" id="contactform">
+            <div class="form-group">
+                <input type="text" name="fullname" placeholder="" id="name">
+                <label for="">Full Name</label>
+            </div>
+            <div class="form-group">
+                <input type="email" name="email" id="email" placeholder="">
+                <label for="">Email</label>
+            </div>
+            <div class="form-group">
+                <textarea name="" id="message" rows="4" placeholder=""></textarea>
+                <label for="">Message</label>
+            </div>
+            <div class="form-group radio-group">
+                <div>
+                    <input type="radio" name="gender" id="male" value="male">male
+
+                </div>
+                <div>
+                    <input type="radio" name="gender" id="female" value="female">Female
+
+                </div>
+
+                <div>
+                    <input type="radio" name="gender" id="other" value="others">others
+                </div>
+                <!-- <label for="">Message</label> -->
+            </div>
+            <div class="form-group checkbox-group">
+                <div>
+                    <input type="checkbox" name="hobbies" id="reading" value="reading">Reading
+
+                </div>
+                <div>
+                    <input type="checkbox" name="hobbies" id="painting" value="painting">Painting
+
+                </div>
+
+                <div>
+                    <input type="checkbox" name="hobbies" id="Sports" value="Sports">Sports
+                </div>
+                <!-- <label for="">Message</label> -->
+            </div>
+
+            <div class="form-group">
+                <input type="text" maxlength="10" name="" id="phone" placeholder="">
+                <label for="phone">Phone number</label>
+            </div>
+            <div class="form-group">
+                <input type="text" name="" id="otherfield" placeholder="">
+                <label for="phone">Other field</label>
+            </div>
+            <button class="button-43" role="button">Submit</button>
+            <!-- <button type="submit">Submit</button> -->
+        </form>
+    </div>
+
+    <table id="dataTable" style="display: none;">
+        <thead>
+            <tr>
+                <th>FullName</th>
+                <th>Email</th>
+                <th>Message</th>
+                <th>Gender</th>
+                <th>hobbies</th>
+                <th>Phone</th>
+                <th>Other field</th>
+                <th>active</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+</body>
+
+</html>

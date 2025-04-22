@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    width: 100%;
+    height: 100%;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* border: 1px solid red; */
+  }
+  .form-container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 450px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    margin-bottom: 10px;
+    animation: slideIn 1s ease-in-out;
+  }
+  @keyframes slideIn {
+    from {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  .form-group {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #ccc;
+    font-size: 16px;
+  }
+  .form-group label {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    color: #666;
+    font-size: 16px;
+    pointer-events: none;
+    transition: all 0.3s ease;
+  }
+  .form-group input:focus,
+  .form-group textarea:focus {
+    border-bottom: 2px solid #6e8efb;
+  }
+  
+  .form-group input:focus ~ label,
+  .form-group input:not(:placeholder-shown) ~ label,
+  .form-group textarea:focus ~ label {
+    top: -15px;
+    font-size: 13px;
+    color: #6e8efb;
+  }
+  .form-group.radio-group .form-group.checkbox-group {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+  .form-group.radio-group input,
+  .form-group.checkbox-group input {
+    width: auto;
+    margin-left: 10px;
+  }
+  table {
+    width: 80%;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+  }
+  table,
+  th,
+  td {
+    border: 1px solid #ddd;
+  }
+  
+  th,
+  td {
+    padding: 8px;
+    text-align: left;
+  }
+  th {
+    background-color: #6e8efb;
+    color: white;
+  }
+  
+  .button-43 {
+    background-image: linear-gradient(-180deg, #37AEE2 0%, #1E96C8 100%);
+    border-radius: .5rem;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    display: flex;
+    font-size: 16px;
+    justify-content: center;
+    padding: 1rem 1.75rem;
+    text-decoration: none;
+    width: 100%;
+    border: 0;
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .button-43:hover {
+    background-image: linear-gradient(-180deg, #1D95C9 0%, #17759C 100%);
+  }
+  
+  @media (min-width: 768px) {
+    .button-43 {
+      padding: 1rem 2rem;
+    }
+  }
